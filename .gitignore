@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ElleChristineV2.Web/FileContentIndex
+/src/RVAGutterPros/.vs
+/src/RVAGutterPros/RVAGutterPros.Web/.vscode
+/src/RVAGutterPros/RVAGutterPros.Web/bin/Debug/net6.0
+/src/RVAGutterPros/RVAGutterPros.Web/obj
+/.vs/ElleChristineV2.Web/v17/.wsuo
+*.sqlite
+/.vs
+/src/ElleChrstine/.vs
+/src/ElleChrstine/ElleChristine.Web/.vscode
+/src/ElleChrstine/ElleChristine.Web/bin/Debug/net6.0
+/src/ElleChrstine/ElleChristine.Web/obj
