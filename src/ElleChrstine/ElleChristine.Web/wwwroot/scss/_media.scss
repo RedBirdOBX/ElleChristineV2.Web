@@ -1,0 +1,64 @@
+﻿.media-xs-demo-class,
+.media-sm-demo-class,
+.media-md-demo-class,
+.media-lg-demo-class,
+.media-xl-demo-class,
+.media-xxl-demo-class
+{
+    display: none;
+}
+
+// xs
+@media (min-width: $media-xs-breakpoint) and (max-width: $media-sm-breakpoint - 1)
+{
+    .media-xs-demo-class
+    {
+        display: block;
+    }
+}
+
+// sm
+@media (min-width: $media-sm-breakpoint) and (max-width: $media-md-breakpoint - 1)
+{
+    .media-sm-demo-class
+    {
+        display: block;
+    }
+}
+
+// md
+@media (min-width: $media-md-breakpoint) and (max-width: $media-lg-breakpoint - 1)
+{
+    .media-md-demo-class
+    {
+        display: block;
+    }
+}
+
+// lg
+@media (min-width: $media-lg-breakpoint) and (max-width: $media-xl-breakpoint - 1)
+{
+    .media-lg-demo-class
+    {
+        display: block;
+    }
+}
+
+// xl
+@media (min-width: $media-xl-breakpoint) and (max-width: $media-xxl-breakpoint - 1)
+{
+    .media-xl-demo-class
+    {
+        display: block;
+    }
+}
+
+// xxl
+@media (min-width: $media-xxl-breakpoint)
+{
+    .media-xxl-demo-class
+    {
+        display: block;
+    }
+}
+

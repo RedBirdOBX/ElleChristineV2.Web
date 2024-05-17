@@ -1,0 +1,215 @@
+// tint-color lightens
+// shade-color darkens
+
+.btn-primary {
+    background-color: $primary-color !important;
+    border-color: shade-color($primary-color, 20%) !important;
+    border-width: 1px !important;
+
+    &:hover {
+        background-color: shade-color($primary-color, 15%) !important;
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary-color !important;
+    border-color: shade-color($secondary-color, 20%) !important;
+    border-width: 1px !important;
+
+    &:hover {
+        background-color: shade-color($secondary-color, 15%) !important;
+    }
+}
+
+.btn-success {
+    background-color: $success-color !important;
+    border-color: shade-color($success-color, 20%) !important;
+    border-width: 1px !important;
+
+    &:hover {
+        background-color: shade-color($success-color, 15%) !important;
+    }
+}
+
+.btn-info {
+    background-color: $info-color !important;
+    border-color: shade-color($info-color, 20%) !important;
+    border-width: 1px !important;
+
+    &:hover {
+        background-color: shade-color($info-color, 15%) !important;
+    }
+}
+
+.btn-danger {
+    background-color: $danger-color !important;
+    border-color: shade-color($danger-color, 20%) !important;
+    border-width: 1px !important;
+
+    &:hover {
+        background-color: shade-color($danger-color, 15%) !important;
+    }
+}
+
+.btn-warning {
+    background-color: $warning-color !important;
+    border-color: shade-color($warning-color, 20%) !important;
+    border-width: 1px !important;
+
+    &:hover {
+        background-color: shade-color($warning-color, 15%) !important;
+    }
+}
+
+// custom button
+.butn {
+    background: #282b2d;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: .75rem 1.75rem !important;
+    line-height: 1.6;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: none;
+    position: relative;
+    z-index: 9999;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    -moz-transition: width .4s;
+    -ms-transition: width .4s;
+    -webkit-transition: width .4s;
+    -o-transition: width .4s;
+    transition: width .4s;
+
+    span {
+        z-index: 9;
+        position: relative;
+    }
+
+    &:hover {
+        color: #fff;
+        border-radius: 3px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        border-radius: 4px;
+        bottom: 6px;
+        left: 0;
+        height: 2px;
+        -moz-transition: width .4s;
+        -ms-transition: width .4s;
+        -webkit-transition: width .4s;
+        -o-transition: width .4s;
+        transition: width .4s;
+        width: 0;
+        background: $primary-color;
+        height: 100%;
+        top: 0;
+        z-index: 1;
+    }
+
+    &:hover:after {
+        width: 100%;
+        border-radius: 3px;
+    }
+
+    &.white {
+        background: #fff;
+        color: #282b2d;
+
+        &:hover {
+            color: #fff;
+            border-radius: 3px;
+        }
+
+        &:after {
+            background: #282b2d;
+            border-radius: 3px;
+        }
+    }
+
+    &.white-hover {
+        &:hover {
+            color: #282b2d;
+
+            span {
+                color: #282b2d;
+            }
+        }
+
+        &:after {
+            background: #fff;
+            border-radius: 3px;
+        }
+    }
+
+    &.light {
+        background: rgba($primary-color, 0.1);
+        color: $primary-color;
+
+        &:hover {
+            color: #fff;
+            background: $primary-color;
+            border-radius: 3px;
+        }
+
+        &:after {
+            background: $primary-color;
+            border-radius: 3px;
+        }
+    }
+
+    &.primary {
+        background: $primary-color;
+        color: #fff;
+
+        span {
+            color: #fff;
+        }
+
+        &:hover {
+            color: #fff;
+            border-radius: 3px;
+        }
+
+        &:after {
+            background: #282b2d;
+            border-radius: 2px;
+        }
+
+        &.white-hover {
+            &:hover {
+                color: #282b2d;
+
+                span {
+                    color: #282b2d;
+                }
+            }
+
+            &:after {
+                background: #fff;
+                border-radius: 3px;
+            }
+        }
+    }
+
+    &.white.theme-hover {
+        &:hover {
+            color: #fff;
+
+            span {
+                color: #fff;
+            }
+        }
+
+        &:after {
+            background: $primary-color;
+            border-radius: 3px;
+        }
+    }
+}

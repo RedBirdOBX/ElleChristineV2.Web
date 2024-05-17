@@ -1,0 +1,19 @@
+﻿.list-style-16 li:after
+{
+    color: $primary-color !important;
+}
+
+.team-members:hover .team-members-text
+{
+    background: $primary-color !important;
+}
+
+.team-members-text span
+{
+    color: $primary-color !important
+}
+
+.team-members:hover .team-members-text h4 a, .team-members:hover .team-members-text span
+{
+    color: $white-color !important;
+}

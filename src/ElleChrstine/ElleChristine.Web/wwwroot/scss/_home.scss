@@ -1,0 +1,26 @@
+﻿.testmonial-single p:before
+{
+    color: $primary-color !important;
+}
+
+#PageTitleSection 
+{
+    h1, p 
+    {
+        text-shadow: 2px 2px 2px $dark-color;
+    }
+}
+
+// xs
+@media (min-width: $media-xs-breakpoint) and (max-width: $media-sm-breakpoint - 1)
+{
+    #PageTitleSection 
+    {
+        max-height: 600px !important;
+        min-height: 600px !important;
+
+        h1 {
+            text-align: center !important;
+        }
+    }
+}
