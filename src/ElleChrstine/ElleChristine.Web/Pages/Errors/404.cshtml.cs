@@ -5,9 +5,9 @@ using RVAGutterPros.Web.Services;
 
 namespace RVAGutterPros.Web.Pages
 {
-    public class MediaModel : PageModel
+    public class Code404Model : PageModel
     {
-        private readonly ILogger<MediaModel> _logger;
+        private readonly ILogger<Code404Model> _logger;
         private readonly IEmailService _emailService;
 
 
@@ -17,7 +17,7 @@ namespace RVAGutterPros.Web.Pages
         [TempData]
         public bool FormSubmitted { get; set; }
 
-        public MediaModel(ILogger<MediaModel> logger, IEmailService emailService)
+        public Code404Model(ILogger<Code404Model> logger, IEmailService emailService)
         {
             _logger = logger;
             _emailService = emailService;
