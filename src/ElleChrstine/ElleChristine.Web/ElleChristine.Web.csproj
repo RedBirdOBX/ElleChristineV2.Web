@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Models\" />
     <Folder Include="wwwroot\css\prism\" />
     <Folder Include="wwwroot\imgs\content\home\" />
     <Folder Include="wwwroot\js\nav\" />
