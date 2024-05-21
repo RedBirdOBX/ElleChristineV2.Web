@@ -1,6 +1,6 @@
-﻿using RVAGutterPros.Web.Models;
+﻿using ElleChristine.Web.Models;
 
-namespace RVAGutterPros.Web.Services
+namespace ElleChristine.Web.Services
 {
     public interface IEmailService
     {

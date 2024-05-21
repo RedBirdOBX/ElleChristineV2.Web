@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using RVAGutterPros.Web.Models;
-using RVAGutterPros.Web.Services;
+using ElleChristine.Web.Models;
+using ElleChristine.Web.Services;
 
-namespace RVAGutterPros.Web.Pages
+namespace ElleChristine.Web.Pages
 {
     public class MediaModel : PageModel
     {

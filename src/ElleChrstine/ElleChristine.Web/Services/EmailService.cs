@@ -1,9 +1,9 @@
-﻿using RVAGutterPros.Web.Models;
+﻿using ElleChristine.Web.Models;
 using System.Net;
 using System.Net.Mail;
 using System.Text;
 
-namespace RVAGutterPros.Web.Services
+namespace ElleChristine.Web.Services
 {
     public class EmailService : IEmailService
     {
@@ -77,6 +77,5 @@ namespace RVAGutterPros.Web.Services
                 }
             }
         }
-
     }
 }

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace RVAGutterPros.Web.Pages.Admin
+namespace ElleChristine.Web.Pages.Admin
 {
     public class StyleGuideModel : PageModel
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace RVAGutterPros.Web.Models
+namespace ElleChristine.Web.Models
 {
     public class ContactFormInputModel
     {

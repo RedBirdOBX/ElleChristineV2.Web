@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace RVAGutterPros.Web.Pages
+namespace ElleChristine.Web.Pages
 {
     public class ShowsModel : PageModel
     {
