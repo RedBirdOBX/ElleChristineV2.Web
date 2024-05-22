@@ -64,8 +64,6 @@
             var logo6 = $(".navbar-brand.logo6 img");
             var logo7 = $(".navbar-brand.logo7 img");
 
-            console.log(scroll);
-
             if (scroll <= 50) {
                 $("header").removeClass("scrollHeader").addClass("fixedHeader");
                 logoinner.attr('src', 'imgs/logos/header-logo.png');
