@@ -18,21 +18,21 @@ namespace ElleChristine.Web.Pages
 
         public void OnGet()
         {
-            string file = "data.json";
-            string appPath = AppDomain.CurrentDomain.BaseDirectory;
-            string fileAndPath = $"{appPath}Configuration\\{file}";
+            //string file = "data.json";
+            //string appPath = AppDomain.CurrentDomain.BaseDirectory;
+            //string fileAndPath = $"{appPath}Configuration\\{file}";
 
-            FileInfo fileInfo = new FileInfo(fileAndPath);
-            if (!fileInfo.Exists)
-            {
-                throw new ArgumentException($"File {fileInfo.FullName} does not exist.");
-            }
+            //FileInfo fileInfo = new FileInfo(fileAndPath);
+            //if (!fileInfo.Exists)
+            //{
+            //    throw new ArgumentException($"File {fileInfo.FullName} does not exist.");
+            //}
 
-            string json = System.IO.File.ReadAllText(file);
+            //string json = System.IO.File.ReadAllText(file);
 
-            List<Show> shows = new List<Show>();
+            //List<Show> shows = new List<Show>();
 
-            Shows = JsonConvert.DeserializeObject<List<Show>>(json);
+            //Shows = JsonConvert.DeserializeObject<List<Show>>(json);
 
         }
     }
