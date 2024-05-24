@@ -4,13 +4,13 @@ using Newtonsoft.Json;
 
 namespace ElleChristine.Web.Pages
 {
-    public class ShowsModel : PageModel
+    public class ShowsModel2 : PageModel
     {
         private readonly ILogger<ShowsModel> _logger;
 
         public List<Show> Shows { get; set; }
 
-        public ShowsModel(ILogger<ShowsModel> logger)
+        public ShowsModel2(ILogger<ShowsModel> logger)
         {
             _logger = logger;
             Shows = new List<Show>();
@@ -18,7 +18,7 @@ namespace ElleChristine.Web.Pages
 
         public void OnGet()
         {
-            string file = "shows.json";
+            string file = "data.json";
             string appPath = AppDomain.CurrentDomain.BaseDirectory;
             string fileAndPath = $"{appPath}data\\{file}";
 
@@ -31,7 +31,7 @@ namespace ElleChristine.Web.Pages
             string json = System.IO.File.ReadAllText(fileAndPath);
             if (!string.IsNullOrEmpty(json))
             {
-                Shows = JsonConvert.DeserializeObject<List<Show>>(json) ?? new List<Show>();
+                Shows = JsonConvert.DeserializeObject<List<Show>>(json);
             }
         }
     }

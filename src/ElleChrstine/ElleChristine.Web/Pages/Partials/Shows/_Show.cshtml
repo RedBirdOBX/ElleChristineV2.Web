@@ -1,0 +1,54 @@
+﻿@using ElleChristine.Web.Models
+
+@model Show
+
+@{
+    // use a true Card class
+    string cardCss = (Model.Id % 2 == 0) ? "card-body bg-light" : "card-body";
+}
+
+<div class="col-lg-12 mb-1-9">
+    <article class="card blog-card">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <div class="card-img bg-img cover-background h-100"
+                        data-overlay-dark="0"
+                        data-background="imgs/content/gigs/@Model.Image"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="@cardCss">
+                    <div class="d-block text-muted mb-2">@Model.Date.ToString("D")</div>
+                    <h3>@Model.Title</h3>
+                    <p>
+                        @Model.Location<br />
+                        @Model.Time
+                    </p>
+
+                    <p>@Html.Raw(Model.Description)</p>
+
+                    <div class="row"">
+                        <div class="col-6">
+
+                        @{
+                            if (!string.IsNullOrWhiteSpace(Model.Url))
+                            {
+                                <a target="_blank" href="@Model.Url">
+                                    <span class="fa fa-2x fa-globe fa-fw"></span>&nbsp;link
+                                </a>
+                            }
+                        }
+                        </div>
+                        <div class="col-6">
+                            <a target="_blank" href="@Model.MapUrl">
+                                <span class="fa fa-2x fa-map-marker"></span>&nbsp;map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+</div>

@@ -1,0 +1,90 @@
+[
+	{
+		"Id":  1,
+		"Title": "Garden Grove Brewing & Urban Winery",
+		"Location": "Richmond, VA",
+		"Date": "2024-05-02",
+		"Time": "8-10 pm",
+		"Description": "<strong>Acoustic Performance</strong> by Elle and Matt. Garden Grove Brewing & Urban Winery is Richmond’s first production facility to serve its customers. Garden Grove Brewing and Urban Winery brings wines and beers crafted under those perfect conditions directly to Richmond, VA.",
+		"Image": "garden-grove.jpg",
+		"Url": "https://www.facebook.com/GardenGroveBrewing",
+		"MapUrl": "https://www.google.com/maps/place/3445+W+Cary+St,+Richmond,+VA+23221/@37.5548285,-77.4885531,17z/data=!3m1!4b1!4m6!3m5!1s0x89b113f1c2800d79:0xaeea43d86f3c7ce!8m2!3d37.5548243!4d-77.4859728!16s%2Fg%2F11bw4f4dz6?entry=ttu"
+	},
+	{
+		"Id": 2,
+		"Title": "Beaverdam Wine Festival",
+		"Location": "Beaverdam, VA",
+		"Date": "2024-05-04",
+		"Time": "2-5 pm",
+		"Description": "<strong>Acoustic Performance</strong> by Elle and Matt. Pop's Country Store Museum & Beaverdam Depot 4 local wineries and 2 live bands. Food, Music, Vendors, Auction, Activities, Kids games.",
+		"Image": "beaverdam-wine-festival.jpg",
+		"Url": "https://www.facebook.com/BeaverdamWineFestival",
+		"MapUrl": "https://www.google.com/maps/place/19419+Beaver+Dam+Rd,+Beaverdam,+VA+23015/@37.9423467,-77.6580442,17z/data=!3m1!4b1!4m6!3m5!1s0x89b14c75c75d4c5b:0x252e8dc043eebfcf!8m2!3d37.9423425!4d-77.6554693!16s%2Fg%2F11c1cw8w13?entry=ttu"
+	},
+	{
+		"Id": 3,
+		"Title": "New Kent Winery",
+		"Location": "New Kent, VA",
+		"Date": "2024-05-11",
+		"Time": "2-5 pm",
+		"Description": "Farm winery, brewery and tasting room located one mile off I-64 between Richmond and Williamsburg.",
+		"Image": "new-kent-winery.jpg",
+		"Url": "https://newkentwinery.com/calendar",
+		"MapUrl": "https://www.google.com/maps/place/New+Kent+Winery+%26+Talleysville+Brewing+Company/@37.5286939,-77.0762507,17z/data=!4m15!1m8!3m7!1s0x89b0e690ae67139f:0x4cb50b17677514dd!2s8400+Old+Church+Rd,+New+Kent,+VA+23124!3b1!8m2!3d37.5286897!4d-77.0736758!16s%2Fg%2F11c2fh9fl7!3m5!1s0x89b0e722fb9f51bf:0x4bad65718965e471!8m2!3d37.5290389!4d-77.0748577!16s%2Fg%2F1vqthnny?entry=ttu"
+	},
+	{
+		"Id": 4,
+		"Title": "The Wayside Inn",
+		"Location": "Middletown, VA",
+		"Date": "2024-06-08",
+		"Time": "6-9 pm",
+		"Description": "The Wayside Inn &amp; Larrick's Tavern is nestled in the beautiful Shenandoah Valley of Middletown, Virginia. Since 1797, the Inn has offered visitors accommodations, dining, and entertainment throughout its long history.",
+		"Image": "wayside-inn.jpg",
+		"Url": "https://www.thewaysideinn1797.com/live-music",
+		"MapUrl": "https://www.google.com/maps/place/7783+Main+St,+Middletown,+VA+22645/@39.0304814,-78.2796484,17z/data=!3m1!4b1!4m6!3m5!1s0x89b5c06f3b8becd1:0xb51d22baa068e7fb!8m2!3d39.0304814!4d-78.2770681!16s%2Fg%2F11bw5004kx?entry=ttu"
+	},
+	{
+		"Id": 5,
+		"Title": "Fest Biergarten",
+		"Location": "Midlothian, VA",
+		"Date": "2024-06-22",
+		"Time": "8-10 pm",
+		"Description": "Fest Biergarten is a local restaurant and a dog-friendly biergarten in Midlothian, Virginia. Great food, atmosphere, and beer!",
+		"Image": "fest.jpg",
+		"Url": "https://www.facebook.com/festmidlothian",
+		"MapUrl": "https://www.google.com/maps/place/Fest+Biergarten/@37.4036034,-77.6890515,16z/data=!3m1!4b1!4m6!3m5!1s0x89b176c4e9bb5eed:0x3887e882626f584d!8m2!3d37.4036034!4d-77.6864712!16s%2Fg%2F11f2wc01jx?entry=ttu"
+	},
+	{
+		"Id": 6,
+		"Title": "Honey Whyte's Bar",
+		"Location": "Richmond, VA",
+		"Date": "2024-07-20",
+		"Time": "7-10 pm",
+		"Description": "Honey Whyte's Bar is a Richmond favorite and known for it's burgers. Great food, atmosphere, drinks, and music!",
+		"Image": "honey-whytes.jpg",
+		"Url": "https://www.facebook.com/honey.whytes.bar",
+		"MapUrl": "https://www.google.com/maps/place/Honey+Whyte's+All+American+Cafe/@37.5310042,-77.4268663,16z/data=!3m1!4b1!4m6!3m5!1s0x89b110e20810c787:0x64984b63d5c53704!8m2!3d37.5310042!4d-77.424286!16s%2Fg%2F1tdmfrwp?entry=ttu"
+	},
+	{
+		"Id": 7,
+		"Title": "Tiny Porch Concert",
+		"Location": "Richmond, VA",
+		"Date": "2024-07-21",
+		"Time": "6:00-6:50 pm",
+		"Description": "Elle Christine will be performing in the Richmond Tiny Porch Concert series.",
+		"Image": "tiny-porch.jpg",
+		"Url": "",
+		"MapUrl": "https://www.google.com/maps/place/406+W+25th+St,+Richmond,+VA+23225/@37.5194766,-77.4613212,16z/data=!3m1!4b1!4m6!3m5!1s0x89b1119d554a639d:0x31ddb7626ebd4505!8m2!3d37.5194724!4d-77.4587463!16s%2Fg%2F11pyp5krhr?entry=ttu"
+	},
+	{
+		"Id": 8,
+		"Title": "New Kent Winery",
+		"Location": "New Kent, VA",
+		"Date": "2024-08-02",
+		"Time": "TBD",
+		"Description": "Farm winery, brewery and tasting room located one mile off I-64 between Richmond and Williamsburg.",
+		"Image": "new-kent-winery.jpg",
+		"Url": "https://newkentwinery.com/calendar",
+		"MapUrl": "https://www.google.com/maps/place/New+Kent+Winery+%26+Talleysville+Brewing+Company/@37.5286939,-77.0762507,17z/data=!4m15!1m8!3m7!1s0x89b0e690ae67139f:0x4cb50b17677514dd!2s8400+Old+Church+Rd,+New+Kent,+VA+23124!3b1!8m2!3d37.5286897!4d-77.0736758!16s%2Fg%2F11c2fh9fl7!3m5!1s0x89b0e722fb9f51bf:0x4bad65718965e471!8m2!3d37.5290389!4d-77.0748577!16s%2Fg%2F1vqthnny?entry=ttu"
+	}
+]
