@@ -1,0 +1,35 @@
+[
+	{
+		"Id":  1,
+		"Title": "Garden Grove Brewing & Urban Winery",
+		"Location": "Richmond, VA",
+		"Date": "2024-05-02",
+		"Time": "8-10 pm",
+		"Description": "<strong>Acoustic Performance</strong> by Elle and Matt. Garden Grove Brewing & Urban Winery is Richmond’s first production facility to serve its customers. Garden Grove Brewing and Urban Winery brings wines and beers crafted under those perfect conditions directly to Richmond, VA.",
+		"Image": "garden-grove.jpg",
+		"Url": "https://www.facebook.com/GardenGroveBrewing",
+		"MapUrl": "https://www.google.com/maps/place/3445+W+Cary+St,+Richmond,+VA+23221/@37.5548285,-77.4885531,17z/data=!3m1!4b1!4m6!3m5!1s0x89b113f1c2800d79:0xaeea43d86f3c7ce!8m2!3d37.5548243!4d-77.4859728!16s%2Fg%2F11bw4f4dz6?entry=ttu"
+	},
+	{
+		"Id": 2,
+		"Title": "Beaverdam Wine Festival",
+		"Location": "Beaverdam, VA",
+		"Date": "2024-05-04",
+		"Time": "2-5 pm",
+		"Description": "<strong>Acoustic Performance</strong> by Elle and Matt. Pop's Country Store Museum & Beaverdam Depot 4 local wineries and 2 live bands. Food, Music, Vendors, Auction, Activities, Kids games.",
+		"Image": "beaverdam-wine-festival.jpg",
+		"Url": "https://www.facebook.com/BeaverdamWineFestival",
+		"MapUrl": "https://www.google.com/maps/place/19419+Beaver+Dam+Rd,+Beaverdam,+VA+23015/@37.9423467,-77.6580442,17z/data=!3m1!4b1!4m6!3m5!1s0x89b14c75c75d4c5b:0x252e8dc043eebfcf!8m2!3d37.9423425!4d-77.6554693!16s%2Fg%2F11c1cw8w13?entry=ttu"
+	},
+	{
+		"Id": 3,
+		"Title": "New Kent Winery",
+		"Location": "New Kent, VA",
+		"Date": "2024-05-11",
+		"Time": "2-5 pm",
+		"Description": "Farm winery, brewery and tasting room located one mile off I-64 between Richmond and Williamsburg.",
+		"Image": "new-kent-winery.jpg",
+		"Url": "https://newkentwinery.com/calendar",
+		"MapUrl": "https://www.google.com/maps/place/New+Kent+Winery+%26+Talleysville+Brewing+Company/@37.5286939,-77.0762507,17z/data=!4m15!1m8!3m7!1s0x89b0e690ae67139f:0x4cb50b17677514dd!2s8400+Old+Church+Rd,+New+Kent,+VA+23124!3b1!8m2!3d37.5286897!4d-77.0736758!16s%2Fg%2F11c2fh9fl7!3m5!1s0x89b0e722fb9f51bf:0x4bad65718965e471!8m2!3d37.5290389!4d-77.0748577!16s%2Fg%2F1vqthnny?entry=ttu"
+	}
+]

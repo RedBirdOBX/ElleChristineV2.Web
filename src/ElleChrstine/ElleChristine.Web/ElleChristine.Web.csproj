@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="wwwroot\css\prism\" />
     <Folder Include="wwwroot\imgs\content\home\" />
     <Folder Include="wwwroot\js\nav\" />
