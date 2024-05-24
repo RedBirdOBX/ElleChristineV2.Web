@@ -28,9 +28,15 @@
 
                     <div class="row"">
                         <div class="col-6">
-                            <a target="_blank" href="@Model.Url">
-                                <span class="fa fa-2x fa-globe fa-fw"></span>&nbsp;link
-                            </a>
+
+                        @{
+                            if (!string.IsNullOrWhiteSpace(Model.Url))
+                            {
+                                <a target="_blank" href="@Model.Url">
+                                    <span class="fa fa-2x fa-globe fa-fw"></span>&nbsp;link
+                                </a>
+                            }
+                        }
                         </div>
                         <div class="col-6">
                             <a target="_blank" href="@Model.MapUrl">
