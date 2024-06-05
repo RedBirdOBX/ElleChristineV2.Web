@@ -2,13 +2,13 @@ using ElleChristine.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddTransient<IEmailService, EmailService>();
+builder.Services.AddHttpClient();
+//builder.Services.AddTransient<APIService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");

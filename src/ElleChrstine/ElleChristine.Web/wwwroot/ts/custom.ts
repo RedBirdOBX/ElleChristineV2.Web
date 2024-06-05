@@ -2,5 +2,5 @@
 
 window.onload = function ()
 {
-    console.log(msg);
+    //console.log(msg);
 };
