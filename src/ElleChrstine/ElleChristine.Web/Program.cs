@@ -5,7 +5,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddTransient<IEmailService, EmailService>();
 builder.Services.AddHttpClient();
-//builder.Services.AddTransient<APIService>();
 
 var app = builder.Build();
 
