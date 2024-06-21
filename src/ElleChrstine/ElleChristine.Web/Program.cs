@@ -1,9 +1,6 @@
-using ElleChristine.Web.Services;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
-builder.Services.AddTransient<IEmailService, EmailService>();
 builder.Services.AddHttpClient();
 
 var app = builder.Build();

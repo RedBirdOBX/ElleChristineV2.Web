@@ -1,32 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using ElleChristine.Web.Models;
-using ElleChristine.Web.Services;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ElleChristine.Web.Pages
 {
     public class MediaModel : PageModel
     {
         private readonly ILogger<MediaModel> _logger;
-        private readonly IEmailService _emailService;
 
-
-        [BindProperty]
-        public ContactFormInputModel ContactFormInputModel { get; set; }
-
-        [TempData]
-        public bool FormSubmitted { get; set; }
-
-        public MediaModel(ILogger<MediaModel> logger, IEmailService emailService)
+        public MediaModel(ILogger<MediaModel> logger)
         {
             _logger = logger;
-            _emailService = emailService;
-            ContactFormInputModel = new ContactFormInputModel();
         }
 
         public void OnGet()
         {
-            ContactFormInputModel= new ContactFormInputModel();
         }
     }
 }

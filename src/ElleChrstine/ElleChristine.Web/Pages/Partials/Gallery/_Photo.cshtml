@@ -1,0 +1,17 @@
+﻿@using ElleChristine.Web.Models
+
+@model Photo
+
+<div class="col-md-6 col-lg-4 mt-1-9 wow fadeIn"
+        data-wow-delay="100ms"
+        data-src="imgs/content/gallery/@Model.FileName"
+        data-sub-html="<h4 class='text-white'>@Html.Raw(Model.Heading)</h4><p>@Html.Raw(Model.Description)</p>">
+    <div class="portfolio-style1">
+        <img src="imgs/content/gallery/@Model.FileName" class="border-radius-10" alt="@Html.Raw(Model.Description)" />
+        <a href="#!" class="portfolio-text">
+            <span class="display-31 font-weight-700 text-orange letter-spacing-2 text-uppercase d-block mb-2">@Html.Raw(Model.Description)</span>
+            <h3 class="mb-0 h5">@Html.Raw(Model.Heading)</h3>
+        </a>
+    </div>
+</div>
+
