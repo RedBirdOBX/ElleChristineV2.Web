@@ -26,20 +26,20 @@ namespace ElleChristine.Web.Pages
         public async Task OnGet()
         {
 
-            //string url = $"{_configuration["APISettings:baseUrl"]}photos";
-            //var request = new HttpRequestMessage(HttpMethod.Get, url) { Headers = {{ HeaderNames.Accept, "application/json" }}};
-            //var client = _httpClientFactory.CreateClient();
-            //var response = await client.SendAsync(request);
+            string url = $"{_configuration["APISettings:baseUrl"]}photos";
+            var request = new HttpRequestMessage(HttpMethod.Get, url) { Headers = { { HeaderNames.Accept, "application/json" } } };
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.SendAsync(request);
 
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    string json = await response.Content.ReadAsStringAsync();
-            //    Photos = JsonConvert.DeserializeObject<List<Photo>>(json) ?? new List<Photo>();
-            //}
-            //else
-            //{
-            //    _logger.LogWarning($"Did not get successful response from {url}");
-            //}
+            if (response.IsSuccessStatusCode)
+            {
+                string json = await response.Content.ReadAsStringAsync();
+                Photos = JsonConvert.DeserializeObject<List<Photo>>(json) ?? new List<Photo>();
+            }
+            else
+            {
+                _logger.LogWarning($"Did not get successful response from {url}");
+            }
         }
     }
 }

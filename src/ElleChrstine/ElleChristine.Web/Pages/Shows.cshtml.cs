@@ -24,38 +24,20 @@ namespace ElleChristine.Web.Pages
 
         public async Task OnGet()
         {
-            // json data 
-            string file = "shows.json";
-            string appPath = AppDomain.CurrentDomain.BaseDirectory;
-            string fileAndPath = $"{appPath}data\\{file}";
+            string url = $"{_configuration["APISettings:baseUrl"]}shows";
+            var request = new HttpRequestMessage(HttpMethod.Get, url) { Headers = { { HeaderNames.Accept, "application/json" } } };
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.SendAsync(request);
 
-             FileInfo fileInfo = new FileInfo(fileAndPath);
-            if (!fileInfo.Exists)
-            { 
-                throw new ArgumentException($"File {fileInfo.FullName} does not exist.");
-            }
-
-            string json = System.IO.File.ReadAllText(fileAndPath);
-            if (!string.IsNullOrEmpty(json))
+            if (response.IsSuccessStatusCode)
             {
+                string json = await response.Content.ReadAsStringAsync();
                 Shows = JsonConvert.DeserializeObject<List<Show>>(json) ?? new List<Show>();
             }
-
-            // api
-            //string url = $"{_configuration["APISettings:baseUrl"]}shows";
-            //var request = new HttpRequestMessage(HttpMethod.Get, url) { Headers = {{ HeaderNames.Accept, "application/json" }}};
-            //var client = _httpClientFactory.CreateClient();
-            //var response = await client.SendAsync(request);
-
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    string json = await response.Content.ReadAsStringAsync();
-            //    Shows = JsonConvert.DeserializeObject<List<Show>>(json) ?? new List<Show>();
-            //}
-            //else
-            //{
-            //    _logger.LogWarning($"Did not get successful response from {url}");
-            //}
+            else
+            {
+                _logger.LogWarning($"Did not get successful response from {url}");
+            }
         }
     }
 }
