@@ -11,32 +11,40 @@ namespace ElleChristine.Web.Pages
         private readonly IConfiguration _configuration;
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public Show NextShow;
+        // for api
+        //public Show NextShow;
+
+        // json data
+        public List<Show> Shows { get; set; }
+
 
         public IndexModel(ILogger<IndexModel> logger, IConfiguration configuration, IHttpClientFactory httpClientFactory)
         {
             _logger = logger;
             _configuration = configuration;
             _httpClientFactory = httpClientFactory;
-            NextShow = new Show();  
+
+            // for api
+            //NextShow = new Show();
         }
 
         public async Task OnGet()
         {
-            string url = $"{_configuration["APISettings:baseUrl"]}shows/nextshow";
-            var request = new HttpRequestMessage(HttpMethod.Get, url) { Headers = {{ HeaderNames.Accept, "application/json" }}};
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.SendAsync(request);
+            // api
+            //string url = $"{_configuration["APISettings:baseUrl"]}shows/nextshow";
+            //var request = new HttpRequestMessage(HttpMethod.Get, url) { Headers = {{ HeaderNames.Accept, "application/json" }}};
+            //var client = _httpClientFactory.CreateClient();
+            //var response = await client.SendAsync(request);
 
-            if (response.IsSuccessStatusCode)
-            {
-                string json = await response.Content.ReadAsStringAsync();
-                NextShow = JsonConvert.DeserializeObject<Show>(json) ?? new Show();
-            }
-            else
-            {
-                _logger.LogWarning($"Did not get successful response from {url}");
-            }
+            //if (response.IsSuccessStatusCode)
+            //{
+            //    string json = await response.Content.ReadAsStringAsync();
+            //    NextShow = JsonConvert.DeserializeObject<Show>(json) ?? new Show();
+            //}
+            //else
+            //{
+            //    _logger.LogWarning($"Did not get successful response from {url}");
+            //}
         }
     }
 }

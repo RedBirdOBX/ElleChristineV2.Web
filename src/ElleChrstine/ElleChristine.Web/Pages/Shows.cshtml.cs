@@ -24,20 +24,38 @@ namespace ElleChristine.Web.Pages
 
         public async Task OnGet()
         {
-            string url = $"{_configuration["APISettings:baseUrl"]}shows";
-            var request = new HttpRequestMessage(HttpMethod.Get, url) { Headers = {{ HeaderNames.Accept, "application/json" }}};
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.SendAsync(request);
+            // json data 
+            string file = "shows.json";
+            string appPath = AppDomain.CurrentDomain.BaseDirectory;
+            string fileAndPath = $"{appPath}data\\{file}";
 
-            if (response.IsSuccessStatusCode)
+             FileInfo fileInfo = new FileInfo(fileAndPath);
+            if (!fileInfo.Exists)
+            { 
+                throw new ArgumentException($"File {fileInfo.FullName} does not exist.");
+            }
+
+            string json = System.IO.File.ReadAllText(fileAndPath);
+            if (!string.IsNullOrEmpty(json))
             {
-                string json = await response.Content.ReadAsStringAsync();
                 Shows = JsonConvert.DeserializeObject<List<Show>>(json) ?? new List<Show>();
             }
-            else
-            {
-                _logger.LogWarning($"Did not get successful response from {url}");
-            }
+
+            // api
+            //string url = $"{_configuration["APISettings:baseUrl"]}shows";
+            //var request = new HttpRequestMessage(HttpMethod.Get, url) { Headers = {{ HeaderNames.Accept, "application/json" }}};
+            //var client = _httpClientFactory.CreateClient();
+            //var response = await client.SendAsync(request);
+
+            //if (response.IsSuccessStatusCode)
+            //{
+            //    string json = await response.Content.ReadAsStringAsync();
+            //    Shows = JsonConvert.DeserializeObject<List<Show>>(json) ?? new List<Show>();
+            //}
+            //else
+            //{
+            //    _logger.LogWarning($"Did not get successful response from {url}");
+            //}
         }
     }
 }

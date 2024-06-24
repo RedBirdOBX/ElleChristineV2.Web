@@ -19,7 +19,11 @@
 
         public string Location { get; set; }
 
-        public DateTime Date { get; set; }
+        // json
+        public DateOnly Date { get; set; }
+
+        // api
+        //public DateTime Date { get; set; }
 
         public string Time { get; set; }
 

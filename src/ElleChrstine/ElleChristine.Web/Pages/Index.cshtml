@@ -2,15 +2,31 @@
 
 @using ElleChristine.Web.Pages
 
-@model IndexModel
 
+
+@* // api IndexModel : PageModel
+@model IndexModel *@
+
+@* // json *@
+@model ShowsModel
 
 @{
     ViewData["Title"] = "Elle Christine, Singer Songwriter from Richmond VA";
+
+    // json data
+    var nextShow = Model.Shows
+                            .Where(s => s.Date > DateOnly.FromDateTime(DateTime.Today))
+                            .OrderBy(s => s.Date)
+                            .FirstOrDefault();
 }
 
 <partial name="Partials/Home/_PageTitle" />
 <partial name="Partials/Home/_About" />
-<partial name="Partials/Home/_Upcoming" model="Model.NextShow" />
+
+@* api
+<partial name="Partials/Home/_Upcoming" model="Model.NextShow" /> *@
+
+@* json *@
+<partial name="Partials/Home/_Upcoming" model="nextShow" />
 
 <div class="my-5"></div>
