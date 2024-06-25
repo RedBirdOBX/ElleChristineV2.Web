@@ -1,8 +1,13 @@
 # ElleChristineV2.Web
 
-Font: Yu Gothic UI Semibold
+## Overview
 
-About Us Band Photo Imgs: 500 x 400
-Photo Gallery: 960 x 960
+ASP.NET Razor Pages Wep App.  For `www.ellechristine.com`. 
 
+ - .NET 8
+ - HTML 5
+- JavaScript
+- TypeScript
+- CSS
+- SASS
 
