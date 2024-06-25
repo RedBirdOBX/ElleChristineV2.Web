@@ -1,0 +1,16 @@
+﻿@page
+
+@using ElleChristine.Web.Pages
+
+@model IndexModel
+
+
+@{
+    ViewData["Title"] = "Elle Christine, Singer Songwriter from Richmond VA";
+}
+
+<partial name="Partials/Home/_PageTitle" />
+<partial name="Partials/Home/_About" />
+<partial name="Partials/Home/_Upcoming" model="Model.NextShow" />
+
+<div class="my-5"></div>

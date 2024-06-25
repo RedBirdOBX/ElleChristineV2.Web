@@ -1,0 +1,144 @@
+﻿$blue-color: #4f96c0 !default;
+$red-color: #f30513 !default;
+$yellow-color: #ffc107 !default;
+$green-color: #157347 !default;
+$teal-color: #20c997 !default;
+$white-color: #ffffff !default;
+$gray-color: #909090 !default;
+$indigo-color: #6610f2 !default;
+$purple-color: #6f42c1 !default;
+$pink-color: #d63384 !default;
+$orange-color: #fd7e14 !default;
+$cyan-color: #0dcaf0 !default;
+
+$primary-color: $blue-color !default;
+$secondary-color: $red-color !default;
+$success-color: $green-color !default;
+$info-color: $primary-color !default;
+$danger-color: $secondary-color !default;
+$warning-color: $orange-color !default;
+
+$light-color: tint-color($gray-color, 70%) !default;
+$dark-color: shade-color($gray-color, 50%) !default;
+
+// tint-color lightens
+// shade-color darkens
+$blue-100: tint-color($blue-color, 80%) !default;
+$blue-200: tint-color($blue-color, 60%) !default;
+$blue-300: tint-color($blue-color, 40%) !default;
+$blue-400: tint-color($blue-color, 20%) !default;
+$blue-500: $blue-color !default;
+$blue-600: shade-color($blue-color, 20%) !default;
+$blue-700: shade-color($blue-color, 40%) !default;
+$blue-800: shade-color($blue-color, 60%) !default;
+$blue-900: shade-color($blue-color, 80%) !default;
+
+$indigo-100: tint-color($indigo-color, 80%) !default;
+$indigo-200: tint-color($indigo-color, 60%) !default;
+$indigo-300: tint-color($indigo-color, 40%) !default;
+$indigo-400: tint-color($indigo-color, 20%) !default;
+$indigo-500: $indigo-color !default;
+$indigo-600: shade-color($indigo-color, 20%) !default;
+$indigo-700: shade-color($indigo-color, 40%) !default;
+$indigo-800: shade-color($indigo-color, 60%) !default;
+$indigo-900: shade-color($indigo-color, 80%) !default;
+
+$purple-100: tint-color($purple-color, 80%) !default;
+$purple-200: tint-color($purple-color, 60%) !default;
+$purple-300: tint-color($purple-color, 40%) !default;
+$purple-400: tint-color($purple-color, 20%) !default;
+$purple-500: $purple-color !default;
+$purple-600: shade-color($purple-color, 20%) !default;
+$purple-700: shade-color($purple-color, 40%) !default;
+$purple-800: shade-color($purple-color, 60%) !default;
+$purple-900: shade-color($purple-color, 80%) !default;
+
+$pink-100: tint-color($pink-color, 80%) !default;
+$pink-200: tint-color($pink-color, 60%) !default;
+$pink-300: tint-color($pink-color, 40%) !default;
+$pink-400: tint-color($pink-color, 20%) !default;
+$pink-500: $pink-color !default;
+$pink-600: shade-color($pink-color, 20%) !default;
+$pink-700: shade-color($pink-color, 40%) !default;
+$pink-800: shade-color($pink-color, 60%) !default;
+$pink-900: shade-color($pink-color, 80%) !default;
+
+$red-100: tint-color($red-color, 80%) !default;
+$red-200: tint-color($red-color, 60%) !default;
+$red-300: tint-color($red-color, 40%) !default;
+$red-400: tint-color($red-color, 20%) !default;
+$red-500: $red-color !default;
+$red-600: shade-color($red-color, 20%) !default;
+$red-700: shade-color($red-color, 40%) !default;
+$red-800: shade-color($red-color, 60%) !default;
+$red-900: shade-color($red-color, 80%) !default;
+
+$orange-100: tint-color($orange-color, 80%) !default;
+$orange-200: tint-color($orange-color, 60%) !default;
+$orange-300: tint-color($orange-color, 40%) !default;
+$orange-400: tint-color($orange-color, 20%) !default;
+$orange-500: $orange-color !default;
+$orange-600: shade-color($orange-color, 20%) !default;
+$orange-700: shade-color($orange-color, 40%) !default;
+$orange-800: shade-color($orange-color, 60%) !default;
+$orange-900: shade-color($orange-color, 80%) !default;
+
+$yellow-100: tint-color($yellow-color, 80%) !default;
+$yellow-200: tint-color($yellow-color, 60%) !default;
+$yellow-300: tint-color($yellow-color, 40%) !default;
+$yellow-400: tint-color($yellow-color, 20%) !default;
+$yellow-500: $yellow-color !default;
+$yellow-600: shade-color($yellow-color, 20%) !default;
+$yellow-700: shade-color($yellow-color, 40%) !default;
+$yellow-800: shade-color($yellow-color, 60%) !default;
+$yellow-900: shade-color($yellow-color, 80%) !default;
+
+$green-100: tint-color($green-color, 80%) !default;
+$green-200: tint-color($green-color, 60%) !default;
+$green-300: tint-color($green-color, 40%) !default;
+$green-400: tint-color($green-color, 20%) !default;
+$green-500: $green-color !default;
+$green-600: shade-color($green-color, 20%) !default;
+$green-700: shade-color($green-color, 40%) !default;
+$green-800: shade-color($green-color, 60%) !default;
+$green-900: shade-color($green-color, 80%) !default;
+
+$teal-100: tint-color($teal-color, 80%) !default;
+$teal-200: tint-color($teal-color, 60%) !default;
+$teal-300: tint-color($teal-color, 40%) !default;
+$teal-400: tint-color($teal-color, 20%) !default;
+$teal-500: $teal-color !default;
+$teal-600: shade-color($teal-color, 20%) !default;
+$teal-700: shade-color($teal-color, 40%) !default;
+$teal-800: shade-color($teal-color, 60%) !default;
+$teal-900: shade-color($teal-color, 80%) !default;
+
+$cyan-100: tint-color($cyan-color, 80%) !default;
+$cyan-200: tint-color($cyan-color, 60%) !default;
+$cyan-300: tint-color($cyan-color, 40%) !default;
+$cyan-400: tint-color($cyan-color, 20%) !default;
+$cyan-500: $cyan-color !default;
+$cyan-600: shade-color($cyan-color, 20%) !default;
+$cyan-700: shade-color($cyan-color, 40%) !default;
+$cyan-800: shade-color($cyan-color, 60%) !default;
+$cyan-900: shade-color($cyan-color, 80%) !default;
+
+
+$gray-100: tint-color($gray-color, 80%) !default;
+$gray-200: tint-color($gray-color, 60%) !default;
+$gray-300: tint-color($gray-color, 40%) !default;
+$gray-400: tint-color($gray-color, 20%) !default;
+$gray-500: $gray-color !default;
+$gray-600: shade-color($gray-color, 20%) !default;
+$gray-700: shade-color($gray-color, 40%) !default;
+$gray-800: shade-color($gray-color, 60%) !default;
+$gray-900: shade-color($gray-color, 80%) !default;
+
+$media-xs-breakpoint: 0;
+$media-sm-breakpoint: 576px;
+$media-md-breakpoint: 768px;
+$media-lg-breakpoint: 992px;
+$media-xl-breakpoint: 1200px;
+$media-xxl-breakpoint: 1400px;
+
+$footer-font-size: 18px;

@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "wwwroot/js/custom.min.js",
+    "inputFiles": [
+      "wwwroot/js/custom.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/bootstrap/bootstrap.5.1.3.min.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap/bootstrap.5.1.3.css"
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\**" />
+    <Compile Remove="wwwroot\imgs\content\contact\**" />
+    <Content Remove="Services\**" />
+    <Content Remove="wwwroot\imgs\content\contact\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <EmbeddedResource Remove="wwwroot\imgs\content\contact\**" />
+    <None Remove="Services\**" />
+    <None Remove="wwwroot\imgs\content\contact\**" />
+    <TypeScriptCompile Remove="Services\**" />
+    <TypeScriptCompile Remove="wwwroot\imgs\content\contact\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="bundleconfig.json" />
+    <Content Remove="compilerconfig.json" />
+    <Content Remove="wwwroot\ts\custom.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\prism\" />
+    <Folder Include="wwwroot\imgs\content\home\" />
+    <Folder Include="wwwroot\js\nav\" />
+    <Folder Include="wwwroot\js\countdown\" />
+    <Folder Include="wwwroot\js\animated-headline\" />
+    <Folder Include="wwwroot\js\clipboard\" />
+    <Folder Include="wwwroot\js\prism\" />
+    <Folder Include="wwwroot\scss\mixins\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Admin\StyleGuide.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Admin\StyleGuide.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.3.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\ts\custom.ts" />
+  </ItemGroup>
+
+</Project>

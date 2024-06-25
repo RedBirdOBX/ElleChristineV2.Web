@@ -1,0 +1,48 @@
+﻿// xs
+@media (min-width: $media-xs-breakpoint) and (max-width: $media-sm-breakpoint - 1)
+{
+    .top-position1 {
+        margin-top: -120px !important;
+    }
+}
+
+// sm
+@media (min-width: $media-sm-breakpoint) and (max-width: $media-md-breakpoint - 1) {
+    .top-position1 {
+        margin-top: -120px !important;
+    }
+}
+
+// md
+@media (min-width: $media-md-breakpoint) and (max-width: $media-lg-breakpoint - 1) {
+    .top-position1 {
+        margin-top: -120px !important;
+    }
+}
+
+// lg
+@media (min-width: $media-lg-breakpoint) and (max-width: $media-xl-breakpoint - 1) {
+    .top-position1 {
+        margin-top: -112px !important;
+    }
+}
+
+// xl
+@media (min-width: $media-xl-breakpoint) and (max-width: $media-xxl-breakpoint - 1) {
+    .top-position1 {
+        margin-top: -112px !important;
+    }
+}
+
+// xxl
+@media (min-width: $media-xxl-breakpoint) {
+    .top-position1 {
+        margin-top: -112px !important;
+    }
+}
+
+
+.cover-background
+{
+    background-position: right !important;
+}

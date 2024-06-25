@@ -1,0 +1,33 @@
+﻿@page
+
+@using ElleChristine.Web.Pages
+
+@model GalleryModel
+
+@{
+    ViewData["Title"] = "Gallery - Elle Christine";
+}
+
+<partial name="Partials/Gallery/_PageTitle" />
+
+<section>
+
+    <div class="container">
+        <div class="section-heading">
+            <h2>Gallery</h2>
+            <p class="w-md-75 w-lg-55">Latest pictures and videos.</p>
+        </div>
+
+        <div class="row portfolio-gallery mt-n1-9">
+
+            @foreach (var photo in Model.Photos)
+            {
+                <partial name="Partials/Gallery/_Photo" model="photo" />
+            }
+
+        </div>
+    </div>
+
+</section>
+
+<div class="my-5"></div>

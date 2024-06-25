@@ -1,0 +1,82 @@
+﻿.text-primary
+{
+    color: $blue-500 !important;
+}
+
+.text-success
+{
+    color: $success-color !important;
+}
+
+.text-info
+{
+    color: $info-color !important;
+}
+
+.text-danger
+{
+    color: $danger-color !important;
+}
+
+.text-warning
+{
+    color: $warning-color !important;
+}
+
+.text-dark
+{
+    color: $dark-color !important;
+}
+
+.section-heading h1:after, .section-heading h2:after, .section-heading h3:after, .section-heading h4:after, .section-heading h5:after, .section-heading h6:after
+{
+    background: $primary-color !important;
+}
+
+// styles <a> links within a <section>, excludes <nav>, <footer>
+section
+{
+    a
+    {
+        color: $blue-600 !important;
+
+        &:hover
+        {
+            color: $blue-400 !important;
+        }
+    }
+}
+
+footer
+{
+    color: $gray-900 !important;
+
+    a
+    {
+        color: $white-color !important;
+
+        &:hover
+        {
+            color: $blue-200 !important;
+        }
+    }
+}
+
+// page title breadcrumbs
+.page-title-section2 {
+    .container {
+        div {
+            li {
+                a:link, a:visited, a:active {
+                    color: $blue-200 !important;
+                    font-size: 18px !important;
+                }
+
+                a:hover {
+                    color: $white-color !important;
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+}

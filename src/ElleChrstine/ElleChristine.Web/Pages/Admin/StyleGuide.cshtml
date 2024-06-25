@@ -1,0 +1,798 @@
+﻿@page
+
+@model ElleChristine.Web.Pages.Admin.StyleGuideModel
+
+@{
+    ViewData["Title"] = "Style Guide";
+}
+
+<partial name="Partials/Admin/_PageTitle" />
+
+<section>
+    <div class="container">
+
+        <div class="row">
+
+            @* sidebar *@
+            <div class="col-2">
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="/Admin/StyleGuide#colors">Colors</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/Admin/StyleGuide#buttons">Buttons</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/Admin/StyleGuide#typography">Typography</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/Admin/StyleGuide#accordion">Accordion</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/Admin/StyleGuide#media">Media Break Points</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/Admin/StyleGuide#templates">Source Templates</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-10">
+
+                @* Colors *@
+                <div>
+                    <h1 class="my-5 text-primary"><a href="#" id="colors"></a>Colors</h1>
+
+                    <div class="row">
+
+                        <div class="col-xs-10 col-sm-offset-1">
+
+                            <table class="table table-bordered table-responsive">
+
+                                <thead>
+                                    <tr>
+                                        <th>Sample</th>
+                                        <th>Name</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td class="bg-primary">[bg-primary]</td>
+                                        <td>primary</td>
+                                        <td>#4f96c0</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bg-secondary text-white">[bg-secondary]</td>
+                                        <td>secondary</td>
+                                        <td>#f30513</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bg-success">[bg-success]</td>
+                                        <td>success</td>
+                                        <td>#157347</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bg-info">[bg-info]</td>
+                                        <td>info</td>
+                                        <td>#4f96c0</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bg-warning">[bg-warning]</td>
+                                        <td>warning</td>
+                                        <td>#fd7e14</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bg-danger">[bg-danger]</td>
+                                        <td>danger</td>
+                                        <td>#f30513</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bg-light">[bg-light]</td>
+                                        <td>light</td>
+                                        <td>calculated</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="bg-dark text-white">[bg-dark]</td>
+                                        <td>dark</td>
+                                        <td>calculated</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        @* blue *@
+                        <div class="col-md-4 mb-3">
+
+                            <div class="p-3 bg-blue-100">$blue-100</div>
+
+                            <div class="p-3 bg-blue-200">$blue-200</div>
+
+                            <div class="p-3 bg-blue-300">$blue-300</div>
+
+                            <div class="p-3 bg-blue-400">$blue-400</div>
+
+                            <div class="p-3 bg-blue-500 border border-dark text-white">$blue-500</div>
+
+                            <div class="p-3 bg-blue-600">$blue-600</div>
+
+                            <div class="p-3 bg-blue-700">$blue-700</div>
+
+                            <div class="p-3 bg-blue-800">$blue-800</div>
+
+                            <div class="p-3 bg-blue-900">$blue-900</div>
+
+                        </div>
+
+                        @* indigo *@
+                        <div class="col-md-4 mb-3">
+
+                            <div class="p-3 bg-indigo-100">$indigo-100</div>
+
+                            <div class="p-3 bg-indigo-200">$indigo-200</div>
+
+                            <div class="p-3 bg-indigo-300">$indigo-300</div>
+
+                            <div class="p-3 bg-indigo-400">$indigo-400</div>
+
+                            <div class="p-3 bg-indigo-500 border border-dark text-white">$indigo-500</div>
+
+                            <div class="p-3 bg-indigo-600">$indigo-600</div>
+
+                            <div class="p-3 bg-indigo-700">$indigo-700</div>
+
+                            <div class="p-3 bg-indigo-800">$indigo-800</div>
+
+                            <div class="p-3 bg-indigo-900">$indigo-900</div>
+
+                        </div>
+
+                        @* cyan *@
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 bg-cyan-100">$cyan-100</div>
+
+                            <div class="p-3 bg-cyan-200">$cyan-200</div>
+
+                            <div class="p-3 bg-cyan-300">$cyan-300</div>
+
+                            <div class="p-3 bg-cyan-400">$cyan-400</div>
+
+                            <div class="p-3 bg-cyan-500 text-white border border-dark">$cyan-500</div>
+
+                            <div class="p-3 bg-cyan-600">$cyan-600</div>
+
+                            <div class="p-3 bg-cyan-700">$cyan-700</div>
+
+                            <div class="p-3 bg-cyan-800">$cyan-800</div>
+
+                            <div class="p-3 bg-cyan-900">$cyan-900</div>
+                        </div>
+
+                        @* purple *@
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 bg-purple-100">$purple-100</div>
+
+                            <div class="p-3 bg-purple-200">$purple-200</div>
+
+                            <div class="p-3 bg-purple-300">$purple-300</div>
+
+                            <div class="p-3 bg-purple-400">$purple-400</div>
+
+                            <div class="p-3 bg-purple-500 border border-dark text-white">$purple-500</div>
+
+                            <div class="p-3 bg-purple-600">$purple-600</div>
+
+                            <div class="p-3 bg-purple-700">$purple-700</div>
+
+                            <div class="p-3 bg-purple-800">$purple-800</div>
+
+                            <div class="p-3 bg-purple-900">$purple-900</div>
+
+                        </div>
+
+                        @* pink *@
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 bg-pink-100">$pink-100</div>
+
+                            <div class="p-3 bg-pink-200">$pink-200</div>
+
+                            <div class="p-3 bg-pink-300">$pink-300</div>
+
+                            <div class="p-3 bg-pink-400">$pink-400</div>
+
+                            <div class="p-3 bg-pink-500 border border-dark text-white">$pink-500</div>
+
+                            <div class="p-3 bg-pink-600">$pink-600</div>
+
+                            <div class="p-3 bg-pink-700">$pink-700</div>
+
+                            <div class="p-3 bg-pink-800">$pink-800</div>
+
+                            <div class="p-3 bg-pink-900">$pink-900</div>
+
+                        </div>
+
+                        @* red *@
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 bg-red-100">$red-100</div>
+
+                            <div class="p-3 bg-red-200">$red-200</div>
+
+                            <div class="p-3 bg-red-300">$red-300</div>
+
+                            <div class="p-3 bg-red-400">$red-400</div>
+
+                            <div class="p-3 bg-red-500 border border-dark text-white">$red-500</div>
+
+                            <div class="p-3 bg-red-600">$red-600</div>
+
+                            <div class="p-3 bg-red-700">$red-700</div>
+
+                            <div class="p-3 bg-red-800">$red-800</div>
+
+                            <div class="p-3 bg-red-900">$red-900</div>
+
+                        </div>
+
+                        @* orange *@
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 bg-orange-100">$orange-100</div>
+
+                            <div class="p-3 bg-orange-200">$orange-200</div>
+
+                            <div class="p-3 bg-orange-300">$orange-300</div>
+
+                            <div class="p-3 bg-orange-400">$orange-400</div>
+
+                            <div class="p-3 bg-orange-500 border border-dark text-white">$orange-500</div>
+
+                            <div class="p-3 bg-orange-600">$orange-600</div>
+
+                            <div class="p-3 bg-orange-700">$orange-700</div>
+
+                            <div class="p-3 bg-orange-800">$orange-800</div>
+
+                            <div class="p-3 bg-orange-900">$orange-900</div>
+
+                        </div>
+
+                        @* yellow *@
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 bg-yellow-100">$yellow-100</div>
+
+                            <div class="p-3 bg-yellow-200">$yellow-200</div>
+
+                            <div class="p-3 bg-yellow-300">$yellow-300</div>
+
+                            <div class="p-3 bg-yellow-400">$yellow-400</div>
+
+                            <div class="p-3 bg-yellow-500 text-white border border-dark">$yellow-500</div>
+
+                            <div class="p-3 bg-yellow-600">$yellow-600</div>
+
+                            <div class="p-3 bg-yellow-700">$yellow-700</div>
+
+                            <div class="p-3 bg-yellow-800">$yellow-800</div>
+
+                            <div class="p-3 bg-yellow-900">$yellow-900</div>
+
+                        </div>
+
+                        @* green *@
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 bg-green-100">$green-100</div>
+
+                            <div class="p-3 bg-green-200">$green-200</div>
+
+                            <div class="p-3 bg-green-300">$green-300</div>
+
+                            <div class="p-3 bg-green-400">$green-400</div>
+
+                            <div class="p-3 bg-green-500 text-white border border-dark">$green-500</div>
+
+                            <div class="p-3 bg-green-600">$green-600</div>
+
+                            <div class="p-3 bg-green-700">$green-700</div>
+
+                            <div class="p-3 bg-green-800">$green-800</div>
+
+                            <div class="p-3 bg-green-900">$green-900</div>
+                        </div>
+
+                        @* teal *@
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 bg-teal-100">$teal-100</div>
+
+                            <div class="p-3 bg-teal-200">$teal-200</div>
+
+                            <div class="p-3 bg-teal-300">$teal-300</div>
+
+                            <div class="p-3 bg-teal-400">$teal-400</div>
+
+                            <div class="p-3 bg-teal-500 text-white border border-dark">$teal-500</div>
+
+                            <div class="p-3 bg-teal-600">$teal-600</div>
+
+                            <div class="p-3 bg-teal-700">$teal-700</div>
+
+                            <div class="p-3 bg-teal-800">$teal-800</div>
+
+                            <div class="p-3 bg-teal-900">$teal-900</div>
+                        </div>
+
+                        @* gray *@
+                        <div class="col-md-4 mb-3">
+                            <div class="p-3 bg-gray-100">$gray-100</div>
+
+                            <div class="p-3 bg-gray-200">$gray-200</div>
+
+                            <div class="p-3 bg-gray-300">$gray-300</div>
+
+                            <div class="p-3 bg-gray-400">$gray-400</div>
+
+                            <div class="p-3 bg-gray-500 text-white border border-dark">$gray-500</div>
+
+                            <div class="p-3 bg-gray-600">$gray-600</div>
+
+                            <div class="p-3 bg-gray-700">$gray-700</div>
+
+                            <div class="p-3 bg-gray-800">$gray-800</div>
+
+                            <div class="p-3 bg-gray-900">$gray-900</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                @* Buttons *@
+                <div>
+
+                    <h1 class="my-5 text-primary"><a href="#" id="buttons"></a>Buttons</h1>
+
+                    <p>
+                        <a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank">
+                            https://getbootstrap.com/docs/5.3/components/buttons/
+                        </a>
+                    </p>
+
+                    <div class="my-3">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-light">Light</button>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+
+                    <div class="my-3">
+                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                    </div>
+
+                    <div class="my-3">
+                        <button type="button" class="btn btn-primary" disabled>Disabled Primary button</button>
+                        <button type="button" class="btn btn-secondary" disabled>Disabled Button</button>
+                        <button type="button" class="btn btn-outline-primary" disabled>Disabled Primary button</button>
+                        <button type="button" class="btn btn-outline-secondary" disabled>Disabled Button</button>
+                    </div>
+
+                    <h2 class="my-3">Custom Buttons</h2>
+                    <div class="my-3">
+                        <button type="button" class="butn primary white-hover">
+                            <span>butn primary white-hover</span>
+                        </button>
+                        <button type="button" class="butn secondary white-hover">
+                            <span>butn secondary white-hover</span>
+                        </button>
+                    </div>
+                </div>
+
+                @*Typography*@
+                <div>
+
+                    <h1 class="my-5 text-primary"><a href="#" id="typography"></a>Typography</h1>
+
+                    <h2 class="my-5">Paragraphs</h2>
+
+                    <p>Defined with Bootstrap 5:
+                        <a href="https://getbootstrap.com/docs/5.3/content/typography/" target="_blank">
+                            https://getbootstrap.com/docs/5.3/content/typography/
+                        </a>
+                    </p>
+
+                    <p>
+                        Normal paragraph: Ye hands belay plunder Plate Fleet Pieces of Eight fire ship sutler Pirate Round booty.
+                        Fire in the hole Sink me chandler run a rig jolly boat execution dock jib belay weigh anchor Arr.
+                        Mutiny gangplank crow's nest spike furl line gally Arr warp lookout.
+                    </p>
+
+                    <p class="lead">
+                        This is a lead paragraph. It stands out from regular paragraphs.
+                    </p>
+
+                    <h2 class="my-5">Headers</h2>
+
+                    <h1>h1 Bootstrap heading</h1>
+                    <h2>h2 Bootstrap heading</h2>
+                    <h3>h3 Bootstrap heading</h3>
+                    <h4>h4 Bootstrap heading</h4>
+                    <h5>h5 Bootstrap heading</h5>
+                    <h6>h6 Bootstrap heading</h6>
+
+                    <p>
+                        Traditional heading elements are designed to work best in the meat of your page content.
+                        When you need a heading to stand out, consider using a <code>display</code> heading—a larger,
+                        slightly more opinionated heading style.
+                    </p>
+
+                    <h1 class="display-1">Display 1</h1>
+                    <h1 class="display-2">Display 2</h1>
+                    <h1 class="display-3">Display 3</h1>
+                    <h1 class="display-4">Display 4</h1>
+                    <h1 class="display-5">Display 5</h1>
+                    <h1 class="display-6">Display 6</h1>
+
+                    <h2 class="my-5">Section Headings</h2>
+
+                    <div class="section-heading">
+                        <h1>H1 Heading</h1>
+                        <h2>H2 Heading</h2>
+                        <h3>H3 Heading</h3>
+                        <h4>H4 Heading</h4>
+                        <h5>H5 Heading</h5>
+                    </div>
+
+                    <h2 class="my-5">Typography Utilities</h2>
+
+                    <p>Styling for common inline HTML5 elements.</p>
+
+                    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                    <p>You can use the code tag to show <code>code</code> text.</p>
+                    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                    <p><u>This line of text will render as underlined.</u></p>
+                    <p><small>This line of text is meant to be treated as fine print.</small></p>
+                    <p><strong>This line rendered as bold text.</strong></p>
+                    <p><em>This line rendered as italicized text.</em></p>
+
+                    <h2 class="my-5">Alignment Utilities</h2>
+
+                    <p class="text-start">Start aligned text on all viewport sizes.</p>
+                    <p class="text-center">Center aligned text on all viewport sizes.</p>
+                    <p class="text-end">End aligned text on all viewport sizes.</p>
+
+                    <p class="text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
+                    <p class="text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
+                    <p class="text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
+                    <p class="text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+                    <p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p>
+
+                    <h2 class="my-5">Text Colors</h2>
+
+                    <div class="row">
+                        <div class="col-4"><p class="text-primary">.text-primary</p></div>
+                        <div class="col-4"><p class="text-secondary">.text-secondary</p></div>
+                        <div class="col-4"><p class="text-success">.text-success</p></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4"><p class="text-danger">.text-danger</p></div>
+                        <div class="col-4"><p class="text-warning bg-dark">.text-warning bg-dark</p></div>
+                        <div class="col-4"><p class="text-info bg-dark">.text-info bg-dark</p></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4"><p class="text-light bg-dark">.text-light bg-dark</p></div>
+                        <div class="col-4"><p class="text-body">.text-body</p></div>
+                        <div class="col-4"><p class="text-black bg-white">.text-black</p></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4"><p class="text-white bg-dark">.text-white bg-dark</p></div>
+                        <div class="col-4"><p class="text-black-50 bg-white">.text-black-50</p></div>
+                        <div class="col-4"><p class="text-white-50 bg-dark">.text-white-50</p></div>
+                    </div>
+
+                    <h2 class="my-5">List Styles</h2>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <p>Style 1</p>
+                            <ul class="list-style-1">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 2</p>
+                            <ul class="list-style-2">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 3</p>
+                            <ul class="list-style-3">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 4</p>
+                            <ul class="list-style-4">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <p>Style 5</p>
+                            <ul class="list-style-5">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 6</p>
+                            <ul class="list-style-6">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 7</p>
+                            <ul class="list-style-7">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 8</p>
+                            <ul class="list-style-8">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <p>Style 9</p>
+                            <ul class="list-style-9">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 10</p>
+                            <ul class="list-style-10">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 11</p>
+                            <ul class="list-style-11">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 12</p>
+                            <ul class="list-style-12">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <p>Style 13</p>
+                            <ul class="list-style-13">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 14</p>
+                            <ul class="list-style-14">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 15</p>
+                            <ul class="list-style-15">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <p>Style 16</p>
+                            <ul class="list-style-16">
+                                <li>Gutter Repair</li>
+                                <li>Gutter Cleaning</li>
+                                <li>Gutter Installation</li>
+                                <li>Gutter Guard Installation</li>
+                                <li>Minor roof repairs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                @* Accordion *@
+                <div>
+                    <section>
+                        <div class="container">
+                            <div class="section-heading">
+                                <h4>Frequently Asked Questions</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="accordion" class="accordion-style">
+                                        <div class="card">
+                                            <div class="card-header" id="headingOne">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        How can i purchase this item ?
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                                <div class="card-body">
+                                                    Tempora incidunt ut labore et dolore exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                    sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        why unique and creative design ?
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                                                <div class="card-body">
+                                                    Neque porro quisquam est quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                    sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingThree">
+                                                <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        are you ready to buy this theme ?
+                                                    </button>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                                                <div class="card-body">
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                    sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                @* Media Break Points *@
+                <div>
+
+                    <h1 class="my-5 text-primary"><a href="#" id="media"></a>Media Break Points</h1>
+
+                    <p>
+                        <a href="https://getbootstrap.com/docs/5.1/layout/breakpoints/" target="_blank">https://getbootstrap.com/docs/5.1/layout/breakpoints/</a>
+                    </p>
+
+                    <div class="bg-blue-100 p-1 media-xs-demo-class">
+                        Visible at xs only. &lt;576px
+                    </div>
+
+                    <div class="bg-blue-200 p-1 media-sm-demo-class">
+                        Visible at sm only 576px-767px
+                    </div>
+
+                    <div class="bg-blue-300 p-1 media-md-demo-class">
+                        Visible at md only 768px-991px
+                    </div>
+
+                    <div class="bg-blue-400 p-1 media-lg-demo-class">
+                        Visible at lg only 992px-1199px
+                    </div>
+
+                    <div class="bg-blue-500 text-white p-1 media-xl-demo-class">
+                        Visible at xl only 1200px-1399px
+                    </div>
+
+                    <div class="bg-blue-600 text-white p-1 media-xxl-demo-class">
+                        Visible at xxl only >=1400px
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>

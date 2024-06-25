@@ -1,0 +1,28 @@
+﻿.service-block4 .service-desc h5:after
+{
+    background: $primary-color;
+}
+
+.service-block4
+{
+    i, span
+    {
+        color: $primary-color !important;
+    }
+
+    .service-desc h5:after
+    {
+        background: $secondary-color !important;
+    }
+
+    i:hover, span:hover
+    {
+        color: $white-color !important;
+    }
+}
+
+
+.service-block4:hover:before
+{
+    background: $secondary-color !important;
+}

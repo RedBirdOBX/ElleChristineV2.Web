@@ -1,0 +1,14 @@
+﻿.footer-list li
+{
+    font-size: $footer-font-size !important;
+
+    a
+    {
+        font-size: $footer-font-size !important;
+    }
+
+    a:before {
+        content: '' !important;
+        padding-right: 0px !important;
+    }
+}
