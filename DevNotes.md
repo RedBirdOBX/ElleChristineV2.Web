@@ -5,6 +5,7 @@ Official Font: Yu Gothic UI Semibold
 - About Us Band Photo Dimensions: 500 x 400
 - Photo Gallery: 960 x 960
 - Page Titles: 1920 x 605
+- Gig Tiles: 600 x 400
 
 
 
