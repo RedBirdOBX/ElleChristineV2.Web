@@ -17,7 +17,9 @@
             </div>
             <div class="col-md-6">
                 <div class="@cardCss">
-                    <div class="d-block text-muted mb-2">@Model.Date.ToString("D")</div>
+                    <div class="d-block text-muted mb-2">
+                        <a asp-fragment="@Model.Date.Ticks">@Model.Date.ToString("D")</a>
+                        </div>
                     <h3>@Model.Title</h3>
                     <p>
                         @Model.Location<br />
