@@ -20,7 +20,7 @@
                     <div class="d-block text-muted mb-2">
                         <a asp-fragment="@Model.Date.Ticks">@Model.Date.ToString("D")</a>
                         </div>
-                    <h3>@Model.Title</h3>
+                    <h3><a href="/Show/@Model.Id">@Model.Title</a></h3>
                     <p>
                         @Model.Location<br />
                         @Model.Time
