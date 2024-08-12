@@ -1,0 +1,27 @@
+﻿@page "{showId:int}"
+
+@using ElleChristine.Web.Pages
+
+@model ShowModel
+
+@{
+    ViewData["Title"] = "Shows - Elle Christine";
+}
+
+<partial name="Partials/Shows/_PageTitle" />
+
+
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-11 col-lg-10">
+                <div class="row">
+                        <partial name="Partials/Shows/_Show" model="@Model.Show" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="my-5"></div>
+
