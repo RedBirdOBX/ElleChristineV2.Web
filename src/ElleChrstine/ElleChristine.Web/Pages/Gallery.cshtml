@@ -14,19 +14,38 @@
 
     <div class="container">
 
+        <div class="row mb-1-9 mb-lg-6 box-hover">
+            <div class="section-heading col-12">
+                <h2>Elle Christine Gallery</h2>
+                <p class="w-md-75 w-lg-55">A collection of the latest pictures and videos.</p>
+            </div>
+            <div class="col-12">
+                <div class="horizontaltab">
+                    <ul class="resp-tabs-list hor_1">
+                        <li><i class="fas fa-image"></i> Photos</li>
+                        <li><i class="fas fa-photo-video"></i> Videos</li>
+                    </ul>
+                    <div class="resp-tabs-container hor_1">
+                        <div>
+                            <div class="row portfolio-gallery mt-n1-9">
+                                @foreach (var photo in Model.Photos)
+                                {
+                                    <partial name="Partials/Gallery/_Photo" model="photo" />
+                                }
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row portfolio-gallery">
+                                @foreach (var video in Model.Videos)
+                                {
+                                    <partial name="Partials/Gallery/_Video" model="video" />
+                                }
 
-        <div class="section-heading">
-            <h2 id="pictures">Pictures</h2>
-            <p class="w-md-75 w-lg-55">A collection of the latest pictures.</p>
-        </div>
-
-        <div class="row portfolio-gallery mt-n1-9">
-
-            @foreach (var photo in Model.Photos)
-            {
-                <partial name="Partials/Gallery/_Photo" model="photo" />
-            }
-
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

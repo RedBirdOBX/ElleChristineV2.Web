@@ -1,0 +1,12 @@
+﻿@using ElleChristine.Web.Models
+
+@model Video
+
+<div class="col-12">
+    <h4>@Model.Description</h4>
+    <div class="embed-responsive embed-responsive-16by9">
+        @Html.Raw(Model.Html)
+    </div>
+</div>
+
+
