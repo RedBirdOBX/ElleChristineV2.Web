@@ -12,7 +12,6 @@
 
         public string Html { get; set; }
 
-
         public string Description { get; set; }
 
         public DateTime Added { get; set; }
