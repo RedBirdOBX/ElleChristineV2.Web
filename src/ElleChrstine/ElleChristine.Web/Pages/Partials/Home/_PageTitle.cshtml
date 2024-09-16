@@ -1,6 +1,10 @@
-﻿ <section class="bg-img banner-section cover-background full-screen left-overlay-dark top-position1"
+﻿@using ElleChristine.Web.Models
+
+@model HomePageTitle
+
+<section class="bg-img banner-section cover-background full-screen left-overlay-dark top-position1"
          data-overlay-dark="5"
-         data-background="imgs/page-titles/home-2.jpg" id="PageTitleSection">
+         data-background="@Model.ImgPath" id="PageTitleSection">
 
     <div class="container position-absolute top-50 start-50 translate-middle z-index-9">
 

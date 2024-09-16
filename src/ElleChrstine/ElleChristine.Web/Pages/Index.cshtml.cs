@@ -13,15 +13,24 @@ namespace ElleChristine.Web.Pages
 
         public Show NextShow;
 
+        public HomePageTitle HomePageTitle;
+
         public IndexModel(ILogger<IndexModel> logger, IConfiguration configuration, IHttpClientFactory httpClientFactory)
         {
             _logger = logger;
             _configuration = configuration;
             _httpClientFactory = httpClientFactory;
+            HomePageTitle = new HomePageTitle();
             NextShow = new Show();
         }
 
         public async Task OnGet()
+        {
+            await GetNextShowAsync();
+        }
+
+
+        private async Task GetNextShowAsync()
         {
             string url = $"{_configuration["APISettings:baseUrl"]}shows/nextshow";
             var request = new HttpRequestMessage(HttpMethod.Get, url) { Headers = { { HeaderNames.Accept, "application/json" } } };
